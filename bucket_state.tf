@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraform_state" {
-    bucket = "terraform-up-and-running-state"
+    bucket = "terraform-up-and-running-state-jorikschra"
 
     # Prevent accidental deletion
     lifecycle {
@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "terraform_state" {
 
     # Enable versioning
     versioning {
-        enabled = True
+        enabled = true
     }
 
     # Enable server-side encryption
